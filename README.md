@@ -12,7 +12,7 @@ npm install
 
 ## Execution
 
-Start up your server and waiting for "announcing" to be logged:
+Start up your server and wait for "announcing" to be logged:
 ```bash
 npx tsx src/server.ts
 ```
