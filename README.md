@@ -26,7 +26,7 @@ Both the client and server will run Open Star nodes, partaking in consensus. Aft
 
 ## How it Works
 When a client fetches a file from a server, the following process takes place:
-1. The client connects to the server's WebSocket server.
+1. The client connects to the server's WebSocket.
 2. The client requests file metadata such as size and cost to download.
 3. The client does a PoW challenge for a piece of the file and sends it to the server.
 4. The server validates the PoW challenge and submits it to the StarFS Open Star oracle to mint tokens.
