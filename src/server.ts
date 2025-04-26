@@ -40,7 +40,7 @@ class ServerHandler {
 
       const file = files[hash]
 
-      if (!await checkHashRoot(BigInt(difficulty), JSON.stringify({ address, seed, time }), Number(nonce))) return this.sendError('Insufficient work complete');
+      if (!await checkHashRoot(BigInt(difficulty*(end-start)), JSON.stringify({ address, seed, time }), Number(nonce))) return this.sendError('Insufficient work complete');
       await oracle.call('redeem', { difficulty, address, seed, nonce, time }, openStar.signalling)
 
       if (!file) return this.sendError('File not found')
