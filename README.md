@@ -14,12 +14,12 @@ npm install
 
 Start up your server and waiting for "announcing" to be logged:
 ```bash
-bun run src/server.ts
+npx tsx src/server.ts
 ```
 
 Then start a client:
 ```bash
-bun run src/client.ts
+npx tsx src/client.ts
 ```
 
 Both the client and server will run Open Star nodes, partaking in consensus. After 10 seconds, the client will fetch the demo file from the server.
