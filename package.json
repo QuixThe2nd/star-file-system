@@ -1,0 +1,13 @@
+{
+  "name": "star-file-system",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "open-star": "github:QuixThe2nd/Open-Star#d1ec0f860245acea8efca5beafcb0e733ed4bc74",
+    "ws": "^8.18.1"
+  }
+}
