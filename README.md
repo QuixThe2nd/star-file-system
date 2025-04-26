@@ -34,7 +34,7 @@ When a client fetches a file from a server, the following process takes place:
 6. Go back to step 3 and loop until the complete file is served.
 
 ### Download Prices and PoW Challenges
-The core functionality of StarFS comes from the download pricing. To better explain how this works, I'll provide an example.
+The core functionality of StarFS comes from the download pricing, allowing for content to be streamed out to users as payment proofs (in the form of PoW challenges) are streamed back.
 
 The server is able to set a price per byte served (e.g. `100` hashes per byte). The client then generates random SHA256 hashes, until one is found that has a difficulty of 100. This hash is then used as payment to download 1 byte.
 
