@@ -40,7 +40,7 @@ The server is able to set a price per byte served (e.g. `100` hashes per byte). 
 
 The client has the option to choose the granularity of this. For example for a 20 byte file, they could choose to do 10x challenges of 200 difficulty, 5x challenges of 400 difficulty, or any other combination.
 
-Difficulty is calculated using the probability of finding that hash. For example a difficulty of 100 would mean that on average you would have had to hash 100 times before finding a matching hash. Below is the formula to calculate the difficulty:
+Difficulty is calculated using the probability of finding that hash. For example a difficulty of 100 would mean that on average you would have to hash 100 times before finding a valid hash. Below is the formula to calculate the difficulty:
 ```ts
 function hashMeetsDifficulty(sha256Hash: bigint, difficulty: bigint = 100n): boolean {
   const maxValue = (BigInt(1) << BigInt(256)) - BigInt(1)
