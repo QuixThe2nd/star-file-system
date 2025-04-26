@@ -2,7 +2,7 @@ import { WebSocket, type RawData } from 'ws';
 import { OpenStar, KeyManager } from 'open-star';
 import type { MessageRequest, MessageResponse } from "../types";
 import { mineBlock } from "./shared/PoWChallenge";
-import { Oracle } from './server/oracle';
+import { Oracle } from './shared/oracle';
 
 const keyManager = new KeyManager('client')
 const oracle = new Oracle()
