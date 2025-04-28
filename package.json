@@ -1,5 +1,6 @@
 {
   "name": "star-file-system",
+  "main": "index.ts",
   "module": "index.ts",
   "type": "module",
   "peerDependencies": {
